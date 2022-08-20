@@ -1,0 +1,77 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1659877975,
+        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "freetype_src": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-2ua7AwyZ2CIPEFfAsOLrMiOdUV94nVL23SwlGke4EQc=",
+        "type": "tarball",
+        "url": "https://download.savannah.gnu.org/releases/freetype/freetype-2.12.0.tar.xz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://download.savannah.gnu.org/releases/freetype/freetype-2.12.0.tar.xz"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1660926553,
+        "narHash": "sha256-19Ib1b7Ny+yGhnxwnH1KhhB2hvALuNuqevA6XzqkQmo=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "00e376e3f3c22d991052dfeaf154c42b09deeb29",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-22.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "freetype_src": "freetype_src",
+        "nixpkgs": "nixpkgs",
+        "tinycmmc": "tinycmmc"
+      }
+    },
+    "tinycmmc": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1660915337,
+        "narHash": "sha256-RUvBcVlsF0jleNeDGP2TtTYVozsx+7lJeOlQJ9vuYrk=",
+        "owner": "grumbel",
+        "repo": "tinycmmc",
+        "rev": "25af158259bc772a5393c6200c4ebfd0ec4e28d0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "grumbel",
+        "repo": "tinycmmc",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
