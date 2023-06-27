@@ -1,11 +1,11 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
 
     tinycmmc.url = "github:grumbel/tinycmmc";
     tinycmmc.inputs.nixpkgs.follows = "nixpkgs";
 
-    freetype_src.url = "https://download.savannah.gnu.org/releases/freetype/freetype-2.12.0.tar.xz";
+    freetype_src.url = "https://download.savannah.gnu.org/releases/freetype/freetype-2.13.1.tar.gz";
     freetype_src.flake = false;
   };
 
@@ -17,7 +17,7 @@
 
           freetype = pkgs.stdenv.mkDerivation rec {
             pname = "freetype";
-            version = "2.12.0";
+            version = "2.13.0";
 
             src = freetype_src;
 
